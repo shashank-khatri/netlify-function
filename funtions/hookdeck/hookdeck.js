@@ -10,13 +10,13 @@ exports.handler = async (event, context) => {
     if(body.action == 'deleted')
     {
     const res = await axios.post('https://discord.com/api/webhooks/1065405532464238742/nrYJf0bneeJAt1gx1O7LMQME41hn67CEL6JSzfyRUsJ8k6gO_YzzL7BZ67nSF8bwFFdf', {
-      content: ` ${username} just un-starred ${repoName}! `
+      content: ` ${username} just un-starred your repo ${repoName}! `
     });
   }
   else
   {
     const res = await axios.post('https://discord.com/api/webhooks/1065405532464238742/nrYJf0bneeJAt1gx1O7LMQME41hn67CEL6JSzfyRUsJ8k6gO_YzzL7BZ67nSF8bwFFdf', {
-      content: ` ${username} just starred ${repoName}! `  
+      content: ` ${username} just starred your repo ${repoName}! `  
     });
   }
     console.log("Submitted!");
