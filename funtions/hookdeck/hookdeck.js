@@ -9,7 +9,7 @@ exports.handler = async (event, context) => {
     const repoName = body.repository.name;
     if(body.action == 'deleted')
     {
-    const res = await axios.post('https://discord.com/api/webhooks/1065405532464238742/nrYJf0bneeJAt1gx1O7LMQME41hn67CEL6JSzfyRUsJ8k6gO_YzzL7BZ67nSF8bwFFdf', {
+    const res = await axios.post('', {
       content: ` ${username} just un-starred your repo ${repoName}! `
     });
   }
